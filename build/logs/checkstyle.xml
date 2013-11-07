@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+
+<ruleset name="QJP">
+ <description>The QJP coding standard.</description>
+ <rule ref="Generic">
+  <exclude name="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine"/>
+  <exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine"/>
+ </rule>
+ <rule ref="Generic.Formatting.MultipleStatementAlignment.IncorrectWarning">
+  <message>赋值表达式格式错误，变量与“=”之间应该空%d格，实际空了%d格</message>
+ </rule>
+ <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter.Found">
+  <message>参数%s在函数中没有用到</message>
+ </rule>
+ <rule ref="PEAR">
+  <exclude name="PEAR.Commenting.FileComment.Missing"/>
+  <exclude name="PEAR.Commenting.ClassComment.MissingTag"/>
+  <exclude name="PEAR.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ </rule>
+ <rule ref="PEAR.NamingConventions.ValidClassName.StartWithCaptial">
+  <message>类名必须大写字母开头</message>
+ </rule>
+ <rule ref="PEAR.Classes.ClassDeclaration.OpenBraceNewLine">
+  <message>类定义的左花括号 { 应另起一行</message>
+ </rule>
+ <rule ref="PEAR.Functions.ValidDefaultValue.NotAtEnd">
+  <message>带有默认值的参数，必须放到参数表的末端</message>
+ </rule>
+ <rule ref="PEAR.Functions.FunctionDeclaration.BraceOnSameLine">
+  <message>函数/方法定义的左花括号 { 应另起一行</message>
+ </rule>
+
+ <rule ref="PEAR.WhiteSpace.ScopeClosingBrace.Line">
+
+  <message>右花括号 } 应另起一行</message>
+
+ </rule>
+
+ <rule ref="PEAR.WhiteSpace.ScopeClosingBrace.Indent">
+
+  <message>右花括号 } 缩进空格数错误，应该为%d，实际为%d</message>
+
+ </rule>
+
+ <rule ref="PEAR.WhiteSpace.ScopeIndent.Incorrect">
+
+  <message>缩进空格数错误，应该为%d，实际为%d</message>
+
+ </rule>
+
+ 
+
+ <rule ref="PEAR.Commenting.FunctionComment.Missing">
+
+  <message>缺少函数/方法的块注释</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.WrongStyle">
+
+  <message>错误的块注释格式，应以 /** 开头</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.MissingParamTag">
+
+  <message>函数/方法的块注释中，缺少参数 %s 的说明</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.MissingReturn">
+
+  <message>函数/方法的块注释中，缺少 @return 标签</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeTags">
+
+  <message>函数/方法的块注释中，@TAG标签前需要空一行</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.SpacingBeforeParamType">
+
+  <message>参数注释@param中，参数类型前应该只有一个空格</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.ParameterNamesNotAligned">
+
+  <message>参数注释@param中，%s(%d)与%s(%d)的参数名称未对齐</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.ParameterCommentsNotAligned">
+
+  <message>参数注释@param中，%s(%d)与%s(%d)的参数说明未对齐</message>
+
+ </rule>
+
+ <rule ref="PEAR.Commenting.FunctionComment.ParamNameNoMatch">
+  <message>参数注释@param中，参数名“%s”与实际名称不符</message>
+ </rule>
+ <rule ref="PEAR.Commenting.FunctionComment.MissingParamName">
+  <message>参数注释@param中，缺少参数名称</message>
+ </rule>
+ <rule ref="PEAR.Commenting.FunctionComment.MissingParamComment">
+  <message>参数注释@param中，缺少参数说明</message>
+ </rule>
+ <rule ref="PEAR.Commenting.FunctionComment.SpacingAfterParams">
+  <message>最后一个参数注释@param后，应该空一行</message>
+ </rule>
+ <rule ref="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBefore">
+  <message>操作符前边应该有一个空格</message>
+ </rule>
+ <rule ref="Squiz.WhiteSpace.OperatorSpacing.NoSpaceAfter">
+  <message>操作符后边应该有一个空格</message>
+ </rule>
+</ruleset>
